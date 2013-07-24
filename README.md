@@ -1,4 +1,4 @@
 iDaisy
 ======
 
-Reporting tools fro DAISY
+Reporting tools for DAISY
