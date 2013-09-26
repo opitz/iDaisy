@@ -1,0 +1,7 @@
+list,table,field,label,type,size,default,filter,relation,rel_uid,rel_field,other_table,other_field,show_field
+1,TeachingComponent,subject,Subject,edit,,,,,,,,,
+2,TeachingComponent,sessions_planned,Norm Sessions,edit,,,,,,,,,
+,,,,,,,,,,,,,
+3,TeachingComponentAssessmentUnit,teaching_component_type_id,Type,pull,,,assessment_unit_id != 99999,DISTINCT,$id,teaching_component_id,TeachingComponentType,id,title
+,,,,,,,,,,,,,
+4,TeachingComponentAssessmentUnit,assessment_unit_id,Assessment Unit(s),pull,,,assessment_unit_id != 99999,,$id,teaching_component_id,AssessmentUnit,id,title

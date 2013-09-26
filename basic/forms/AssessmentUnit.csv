@@ -1,0 +1,7 @@
+list,table,field,label,type,size,default,filter,relation,rel_uid,rel_field,other_table,other_field,show_field
+,AssessmentUnit,id,AU_ID,hide,,,,,,,,,
+,,,,,,,,,,,,,
+,AssessmentUnit,title,Assessment Unit,edit,,,,,,,,,
+,AssessmentUnit,assessment_unit_code,Code,edit,,,,,,,,,
+,AssessmentUnit,department_id,Department,hide,,,,,,,Department,id,department_name
+,AssessmentUnit,description,Description,edit,80,,,,,,,,

@@ -1,0 +1,11 @@
+uid,table,field,label,type,default,filter,relation,rel_uid,rel_field,rel_filter
+,TeachingComponent,subject,Subject,,,id = __TC_ID,pull down,TC_ID,id,
+TC_ID,TeachingInstance,teaching_component_id,TC ID,,,id = $id,,,,
+,TeachingComponent,sessions_planned,Norm Sessions,,,id = __TC_ID,,,,
+TCT_ID,TeachingComponentAssessmentUnit,teaching_component_type_id,ID of Type,noop,,teaching_component_id = __TC_ID,,,,
+,TeachingComponentType,title,Type,noop,,id = __TCT_ID,pull down,TCT_ID,id,
+,TeachingInstance,sessions,Sessions given,,,id = $id,,,,
+E_ID,TeachingInstance,employee_id,E_ID,noop,,id = $id,,,,
+,Employee,fullname,Lecturer,noop,,Id = __E_ID,pull down,E_ID,id,
+D_ID,Employee,department_id,D_ID,noop,,Id = __E_ID,,,,
+,Department,department_name,Department,noop,,Id = __D_ID,,,,

@@ -1,0 +1,9 @@
+uid,list,record,table,field,label,type,default,filter,relation,rel_uid,rel_field
+,1,,TeachingComponent,subject,Subject,edit,,,,,
+,2,,TeachingComponent,sessions_planned,Norm Sessions,edit,,,,,
+,,,,,,,,,,,
+TCT_ID,,,TeachingComponentAssessmentUnit,teaching_component_type_id,ID of Type,hide,,assessment_unit_id != 99999,DISTINCT,$id,teaching_component_id
+,3,,TeachingComponentType,title,Type,pull,,,,TCT_ID,id
+,,,,,,,,,,,
+AU_ID,,,TeachingComponentAssessmentUnit,assessment_unit_id,AU_ID,hide,,assessment_unit_id != 99999,,$id,teaching_component_id
+,4,,AssessmentUnit,title,Assessment Unit,pull,,,,AU_ID,id

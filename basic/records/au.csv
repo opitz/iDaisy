@@ -1,0 +1,6 @@
+Table,Field,Title,Type,Relation,Presentation
+AssessmentUnit au,au.assessment_unit_code,Code,,,
+AssessmentUnit au,au.title,Assessment Unit,,,
+Employee e,e.fullname,Course Provider,,LEFT JOIN Employee e ON e.id = au.course_provider_employee_id,
+,"IF(au.manual = 1,'X','')",Manual,,,
+,"IF(au.doctoral_training = 1,'X','')",Doctoral,,,

@@ -1,0 +1,13 @@
+uid,list,rec,table,field,label,type,default,filter,relation,rel_uid,rel_field,rel_filter
+TC_ID,,,TeachingInstance,teaching_component_id,TC_ID,hide,,,,,,
+E_ID,,,TeachingInstance,employee_id,E_ID,hide,,,,,,
+D_ID,,,TeachingComponent,department_id,D_ID,hide,,,,TC_ID,id,
+T_ID,,,TeachingInstance,term_id,T_ID,hide,,,,,,
+D_CODE,,,Department,department_code,D_CODE,hide,,,,D_ID,id,
+,,,,,,,,,,,,
+,,,Term,term_code,Term,pull,,,,T_ID,,
+,,,TeachingComponent,subject,Subject,edit,,,,TC_ID,,
+,,,Department,department_name,Department,edit,,,,D_ID,id,
+,,,Employee,fullname,Lecturer,edit,,,,E_ID,id,
+,,,TeachingInstance,sessions,Sessions,edit,,,,,,
+,,,TeachingInstance,percentage,Percentage,edit,,,,,,

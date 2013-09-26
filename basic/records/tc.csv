@@ -1,0 +1,5 @@
+Table,Field,Title,Type,Relation,Presentation
+TeachingComponent tc,tc.subject,Teaching Component,,,
+TeachingComponentType tct,tct.title,Type,,,
+,,Assessment Units,,LEFT JOIN Employee e ON e.id = au.course_provider_employee_id,
+,tc.sessions_planned,Sessions Planned,,,
